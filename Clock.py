@@ -365,7 +365,6 @@ try:
             wiringpi.digitalWrite(Segment3_6,0)
             wiringpi.digitalWrite(Segment3_7,0)
 
-
         # trailing minute
         if now.minute % 10 == 0:
             wiringpi.digitalWrite(Segment4_1,1)
@@ -545,4 +544,3 @@ finally:
     wiringpi.pinMode(Segment4_7,0)
     
     wiringpi.pinMode(Colon,0)
-    
